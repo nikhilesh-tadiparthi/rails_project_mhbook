@@ -1,0 +1,9 @@
+rails generate controller StaticPages home help
+rails destroy  controller StaticPages home help
+
+rails generate model User name:string email:string
+rails destroy model User
+
+bundle exec rake db:migrate
+bundle exec rake db:rollback
+bundle exec rake db:migrate VERSION=0
