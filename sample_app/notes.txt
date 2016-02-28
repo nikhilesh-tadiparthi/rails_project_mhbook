@@ -7,3 +7,18 @@ rails destroy model User
 bundle exec rake db:migrate
 bundle exec rake db:rollback
 bundle exec rake db:migrate VERSION=0
+
+ps aux
+ps aux | grep spring
+kill -15 12241
+spring stop
+pkill -15 -f spring
+
+>> flash = { success: "It worked!", danger: "It failed." }
+=> {:success=>"It worked!", :danger=>"It failed."}
+>> flash.each do |key, value|
+?>   puts "Key #{key.inspect} has value #{value.inspect}"
+>> end
+Key :success has value "It worked!"
+Key :danger has value "It failed."
+
