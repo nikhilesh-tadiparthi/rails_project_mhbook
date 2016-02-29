@@ -22,3 +22,7 @@ pkill -15 -f spring
 Key :success has value "It worked!"
 Key :danger has value "It failed."
 
+user.update_attributes(name: "The Dude", email: "dude@abides.org")
+user.update_attribute(:name, "The Dude")
+
+user.errors.full_messages
