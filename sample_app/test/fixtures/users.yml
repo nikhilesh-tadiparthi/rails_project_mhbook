@@ -2,3 +2,8 @@ nikhilesh:
   name: Nikhilesh Tadiparthi
   email: to.nikhilesh@outlook.com
   password_digest: <%= User.digest('password') %>
+  
+michael:
+  name: Michael Hartl
+  email: michael.hartl@railstutorial.org
+  password_digest: <%= User.digest('password') %>
